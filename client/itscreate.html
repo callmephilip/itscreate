@@ -14,6 +14,7 @@
     </div>
 
     {{> locationIndicator}}
+
 </body>
 
 <!-- templates -->
@@ -22,9 +23,6 @@
 	<div class="landing animated fadeInDown panel panel-default hundred-p-height">
 		<div class="panel-body">
 			{{#if currentUser}}
-				<!-- <img src="http://graph.facebook.com/{{currentUser.services.facebook.id}}/picture">
-				{{currentUser.services.facebook.name}}
-				<button class="logout">Log out</button> -->
 				<h1>ITSCREATE</h1>
 				<h4>Spreading creativity and tracking the creators</h4>
 				<h4>working ... </h4>
@@ -124,7 +122,7 @@
 				<img width="100" height="100" src="http://graph.facebook.com/{{services.facebook.id}}/picture?width=100&height=100">
 			</div>
 			<div class="col-md-10">
-				<h3>{{services.facebook.name}}</h3>
+				<h3>{{profile.name}}</h3>
 				{{#if profile.location}}
 					<button type="button" class="btn btn-default btn-lng">
 						<span class="glyphicon glyphicon-map-marker"></span> {{profile.location.city}}, {{profile.location.country}}
