@@ -1,0 +1,148 @@
+/* CSS declarations go here */
+
+body, html {
+	overflow: hidden;
+	height: 100%; min-height: 100%;
+	background-image:url('/az_subtle.png'); 
+}
+
+.full-height { height: 100%; min-height: 100%; }
+.eighty-p-height { height: 80%; }
+.hundred-p-height.panel { height: 100%; margin-top: 0; margin-bottom: 0; }
+.hidden { display: none; }
+
+/* Container vertical shifts */
+
+.container.inital-shift {
+	-webkit-transform: translate(0,0);
+	-moz-transform: translate(0,0);
+	transform: translate(0,0);
+}
+
+.container.chat-shift {
+	-webkit-transform: translate(0,-180%);
+	-moz-transform: translate(0,-180%);
+	transform: translate(0,-180%);
+}
+
+.container.chat-shift .chat { opacity: 1; }
+.container.chat-shift .map { opacity: 0.5; }
+.container.chat-shift .people { opacity: 0.5; }
+
+.container.people-shift {
+	-webkit-transform: translate(0,-260%);
+	-moz-transform: translate(0,-260%);
+	transform: translate(0,-260%);
+}
+
+.container.people-shift .chat { opacity: 0.5; }
+.container.people-shift .map { opacity: 0.5; }
+.container.people-shift .people { opacity: 1; }
+
+.container.map-shift {
+	-webkit-transform: translate(0,-103%);
+	-moz-transform: translate(0,-103%);
+	transform: translate(0,-103%);
+}
+
+.container.map-shift .chat { opacity: 0.5; }
+.container.map-shift .map { opacity: 1; }
+.container.map-shift .people { opacity: 0.5; }
+
+/* Bootstrap overrides */
+
+.container {
+	-webkit-transition: all 500ms ease-out;
+	-moz-transition: all 500ms ease-out;
+	transition: all 500ms ease-out;
+}
+
+.panel {
+	position: relative;
+	margin-top: 5%; margin-bottom: 5%;
+	background-color: #fff;
+}
+
+.panel .panel-footer {
+	position: absolute;
+	bottom: 0; left: 0; right: 0;
+}
+
+/* Components */
+
+.landing {
+	background: url('/splash.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.landing .panel-body {
+	position: absolute;
+	top: 50%;
+	padding: 40px;
+}
+
+.landing h1 {
+	font-size: 80px;
+}
+
+.landing h4 {
+	font-size: 25px;
+}
+
+.landing h1, h4 {
+	color: #fff;
+}
+
+.landing button {
+	margin-top: 50px;
+}
+
+.chat, .map, .people {
+	-webkit-transition: all 500ms ease-out;
+	-moz-transition: all 500ms ease-out;
+	-webkit-transition: all 500ms ease-out;
+}
+
+.new-message-form {
+	position: absolute; z-index: 10000;
+	left: -1px; right:-1px; top: -1px; padding: 15px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 8px 6px -6px #ccc;
+	   -moz-box-shadow: 0 8px 6px -6px #ccc;
+	        box-shadow: 0 8px 6px -6px #ccc;
+
+}
+
+.messages-panel {
+	overflow: scroll; height: 100%;
+	padding-top: 180px;
+}
+
+li.message img {
+	border-radius: 50px;
+	margin-top: 10px;
+}
+
+li.message .meta {
+	border-top: dotted 1px #ccc;
+	padding-top: 9px;
+}
+
+li.person img {
+	border-radius: 100px;
+}
+
+.wheres-waldo {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+}
+
+.map-canvas { 
+	position: absolute; 
+	left: 0; width:100%; 
+	top: 0; height: 100%;
+}
