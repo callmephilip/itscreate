@@ -1,0 +1,10 @@
+<template name="emoticons">
+	<a class="close">&times;</a>
+	<ul class="emoticons">
+		{{#each icons}}
+			<li>
+				<img class="emoticon-image" data-name="{{name}}" src="{{url}}">
+			</li>
+		{{/each}}
+	</ul>
+</template>

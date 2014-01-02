@@ -51,6 +51,14 @@ body, html {
 
 /* Bootstrap overrides */
 
+.popover {
+	max-width:none !important;
+
+	.arrow {
+		display:none !important;
+	}
+}
+
 .container {
 	-webkit-transition: all 500ms ease-out;
 	-moz-transition: all 500ms ease-out;
@@ -116,6 +124,37 @@ body, html {
 	   -moz-box-shadow: 0 8px 6px -6px #ccc;
 	        box-shadow: 0 8px 6px -6px #ccc;
 
+	.popover {
+		top: 0px !important;
+	}
+
+}
+
+.add-smth-create
+{
+	margin-left:1em;
+	cursor: pointer;
+}
+
+ul.emoticons {
+	margin:0; padding:0;
+	list-style-type:none;
+	width: 400px;
+
+	li {
+		opacity:0.5;
+		cursor:pointer;
+		display:inline-block;
+		padding:5px;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		img {
+			width : 40px; 
+		}
+	}	
 }
 
 .messages-panel {

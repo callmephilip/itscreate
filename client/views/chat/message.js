@@ -29,11 +29,15 @@ var shortUrl = function(url, l){
 
 Template.message.rendered = function(){
     var message = $(this.find('.message-content'));
-    message.html(message.html().autoLink({
+    var text = message.html().autoLink({
         callback: function(url) {
             var shortenedUrl = shortUrl(url, 40);
             return '<a target="_blank" href="' + url + '">' +
                 shortenedUrl + '</a>';
         } 
-    }));
+    });
+
+    text = Emoticons.apply(text);
+
+    message.html(text);
 };
