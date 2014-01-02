@@ -1,0 +1,11 @@
+<template name="layout">
+	<div class="container full-height inital-shift">
+		{{yield}}
+		
+		{{> map}}
+		{{> chat}}
+		{{> people}}
+	</div>
+
+	{{> locationIndicator}}
+</template>

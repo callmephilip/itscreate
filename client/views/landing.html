@@ -1,0 +1,17 @@
+<template name="landing">
+	<div class="landing animated fadeInDown panel panel-default hundred-p-height">
+		<div class="panel-body">
+			{{#if currentUser}}
+				<h1>ITSCREATE</h1>
+				<h4>Spreading creativity and tracking the creators</h4>
+				<h4>working ... </h4>
+			{{else}}
+				<h1>ITSCREATE</h1>
+				<h4>Spreading creativity and tracking the creators</h4>
+				<button type="button" class="login btn btn-default btn-lg">
+					<span class="glyphicon glyphicon-user"></span> Jump in
+				</button>
+			{{/if}}
+		</div>
+	</div>
+</template>

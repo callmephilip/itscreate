@@ -13,3 +13,4 @@ accounts-base
 accounts-ui
 audit-argument-checks
 less
+iron-router

@@ -1,0 +1,13 @@
+<template name="locationIndicator">
+	<div class="wheres-waldo {{#if currentLocation}}normal{{else}}hidden{{/if}}">
+		{{#if currentLocation}}
+			<button type="button" class="locate btn btn-default btn-lng">
+				<span class="glyphicon glyphicon-map-marker"></span> {{currentLocation.city}}, {{currentLocation.country}}
+			</button>
+		{{else}}
+			<button type="button" class="locate btn btn-default btn-lng">
+				<span class="glyphicon glyphicon-map-marker"></span> Where are you, broski?
+			</button>
+		{{/if}}
+	</div>
+</template>

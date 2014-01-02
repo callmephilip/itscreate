@@ -1,0 +1,17 @@
+<template name="person">
+	<li class="list-group-item person">
+		<div class="row">
+			<div class="col-md-2 text-center">
+				<img width="100" height="100" src="http://graph.facebook.com/{{services.facebook.id}}/picture?width=100&height=100">
+			</div>
+			<div class="col-md-10">
+				<h3>{{profile.name}}</h3>
+				{{#if profile.location}}
+					<button type="button" class="btn btn-default btn-lng">
+						<span class="glyphicon glyphicon-map-marker"></span> {{profile.location.city}}, {{profile.location.country}}
+					</button>
+				{{/if}}
+			</div>
+		</div>
+	</li>
+</template>

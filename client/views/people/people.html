@@ -1,0 +1,12 @@
+<template name="people">
+	<div class="people panel panel-default eighty-p-height">
+		<div class="panel-heading">{{peopleCount}} people online</div>
+		<div class="panel-body">
+			<ul class="list-group">
+				{{#each allPeople}}
+					{{> person}}
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+</template>
